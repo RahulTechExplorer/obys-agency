@@ -22,6 +22,18 @@ html , body{
     width: 100%;
 }
 
+#cursor{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: 1px solid #ffffffbe;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
 #loader{
     height: 100%;
     width: 100%;
@@ -30,6 +42,7 @@ html , body{
     background-color: #030303;
     padding: 25vh 10vw;
 }
+
 
 .line{
     /* background-color: red; */
@@ -120,5 +133,62 @@ text-align: right;
 #page1{
     height: 100vh;
     width: 100%; 
-    background-color: #151515;
+    /* background-color: #151515; */
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav-part2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.hero{
+    /* background: red; */
+    width: 72%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+
+.hero h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+.hero h2{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+
+
+#hero3 h2:hover{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fffafa;
+    color:transparent;
+    font-weight: 500;
+    text-decoration: none;
 }
